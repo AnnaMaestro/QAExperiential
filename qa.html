@@ -1,0 +1,34 @@
+<html>
+	<!-- yes, this code is awful. that's the point of this exercise! -->
+	<body bgcolor="silver" align=center>
+	<h2>QA Experiential</h2>
+	<p>This is a sample app for testing and demonstrative purposes. There are definitly some bugs to uncover here!</p>
+	<hr/>
+	<p>
+		<img src="https://www.wilsonlanguage.com/wp-content/themes/wilson-nov/img/logo.svg" height=128px width=128px/>
+	</p>
+	<p>
+	Enter your name: <input type="text" id='yourName'/><br/>
+	Enter your birthdate: <input type="text" id='birthdate'/><br/>
+	&nbsp;<br/>
+	<input type='button' value='Submit' onclick='popMsg()'/>
+	<hr>
+	<p style=color:#efefef>Copyright some sample company</p>
+	</body>
+	<script>
+	function popMsg(){
+		const oneDay = 24 * 60 * 60 * 1000;
+	
+		var name = document.getElementById('yourName').value;
+		var bdayTxt = document.getElementById('birthdate').value;
+		var bday = new Date(bdayTxt);
+		
+		const diffDays = Math.round(Math.abs((new Date() - bday) / oneDay));
+		
+		alert('Hi, ' + name + '! You have been alive for ' + diffDays + ' day(s)!');
+		
+		diffDays = 0;
+	}
+	
+	</script>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "qaexperiential",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnnaMaestro/QAExperiential.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnnaMaestro/QAExperiential/issues"
+  },
+  "homepage": "https://github.com/AnnaMaestro/QAExperiential#readme",
+  "devDependencies": {
+    "cypress": "^13.6.0"
+  }
+}
